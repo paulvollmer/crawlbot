@@ -15,7 +15,7 @@ import (
 )
 
 func main() {
-	crawler := NewCrawler("http://cnn.com", myURLHandler, 4)
+	crawler := crawlbot.NewCrawler("http://cnn.com", myURLHandler, 4)
 	crawler.Start()
 	crawler.Wait()
 }
